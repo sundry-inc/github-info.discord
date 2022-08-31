@@ -1,0 +1,19 @@
+{
+  "name": "github-info.discord",
+  "version": "0.0.1",
+  "description": "",
+  "main": "Bot.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/just-dudes/github-info.discord.git"
+  },
+  "author": "joyfulpebble",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/just-dudes/github-info.discord/issues"
+  },
+  "homepage": "https://github.com/just-dudes/github-info.discord#readme"
+}
