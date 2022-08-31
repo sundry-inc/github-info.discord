@@ -1,1 +1,5 @@
+#files
 .env.local
+
+#folders
+/node_modules
