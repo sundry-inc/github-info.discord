@@ -1,6 +1,6 @@
 import "dotenv/config";
 
-import { Client, ClientOptions } from "discord.js";
+import { Client } from "discord.js";
 import mongoose from "mongoose";
 
 const TOKEN = process.env.DISCORD_BOT_TOKEN;
