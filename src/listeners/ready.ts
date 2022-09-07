@@ -24,6 +24,6 @@ export default (client: Client): void => {
       throw new Error(`${error}`);
     }
     
-    if(mongodb_conect) console.log('Success!');
+    if(mongodb_conect) console.log(`Success! ${client.user?.username} is online`);
   })
 }
