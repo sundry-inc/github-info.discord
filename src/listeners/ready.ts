@@ -27,6 +27,6 @@ export default (client: Client): void => {
       }
       
       if(mongodb_conect) console.log(`Success! ${client.user?.username} is online`);
-      handler(client)
+      handler(client);
   })
 }
