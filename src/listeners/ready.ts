@@ -3,7 +3,7 @@ import "dotenv/config";
 import { Client } from "discord.js";
 import mongoose from "mongoose";
 
-import handler from '../command-handler'
+import handleTextCommands from '../command-handler'
 
 const CLUSTER_PASS = process.env.MONGODB_CLUSTER_PASS;
 const CLUSTER_USER = process.env.MONGODB_CLUSTER_USER;
@@ -22,11 +22,13 @@ export default (client: Client): void => {
         }
         );
         mongodb_conect = true;
-      } catch (error) {
-        throw new Error(`${error}`);
-      }
+      } 
+    catch (error) {
+      throw new Error(`${error}`);
+    }
       
-      if(mongodb_conect) console.log(`Success! ${client.user?.username} is online`);
-      handler(client);
+    if(mongodb_conect) console.log(`Success! ${client.user?.username} is online.`);
+    
+    handleTextCommands(client);
   })
 }
