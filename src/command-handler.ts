@@ -1,4 +1,3 @@
-// import  fs, { Dirent } from 'fs';
 import { Client } from 'discord.js';
 
 import listenerTextCommands from './listeners/text-commands';
