@@ -1,1 +1,1 @@
-# github-info.discord ⚙
+# github-info.discord ✉
