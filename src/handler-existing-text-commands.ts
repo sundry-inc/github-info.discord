@@ -20,9 +20,5 @@ export default (client: Client) => {
     commands[commandName.toLowerCase()] = commandFile;
   }
 
-  // console.group('Commands:');
-  //   console.log(commands);
-  // console.groupEnd();
-
   listenerTextCommands(client, commands);
 }

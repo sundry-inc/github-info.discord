@@ -3,7 +3,7 @@ import "dotenv/config";
 import { Client } from "discord.js";
 import mongoose from "mongoose";
 
-import handleTextCommands from '../command-handler'
+import handleTextCommands from '../handler-existing-text-commands'
 
 const CLUSTER_PASS = process.env.MONGODB_CLUSTER_PASS;
 const CLUSTER_USER = process.env.MONGODB_CLUSTER_USER;

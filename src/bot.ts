@@ -5,9 +5,7 @@ import { Client, GatewayIntentBits } from "discord.js";
 import ready from './listeners/ready'
 
 console.log("Bot is starting...");
-
-const TOKEN: string = process.env.DISCORD_BOT_TOKEN;
-
+const TOKEN = process.env.DISCORD_BOT_TOKEN;
 
 const client: Client = new Client({
 
