@@ -9,6 +9,7 @@ export default (client: Client, commands: text_commands_type) => {
     const args: string[] = message.content.slice(1).split(/ +/);
     const commandName: string = args.shift()!.toLowerCase();
 
+
     if (!commands[commandName]) {
       return;
     }
