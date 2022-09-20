@@ -1,14 +1,14 @@
 import "dotenv/config";
 
-import { Client, GatewayIntentBits } from 'discord.js';
+import { Client, GatewayIntentBits } from "discord.js";
 
 import ready from './listeners/ready'
 
 console.log("Bot is starting...");
-
 const TOKEN = process.env.DISCORD_BOT_TOKEN;
 
-const client = new Client({
+const client: Client = new Client({
+
 	intents: [
 		GatewayIntentBits.DirectMessages,
     GatewayIntentBits.Guilds,
@@ -19,4 +19,4 @@ const client = new Client({
 });
 	client.login(TOKEN);
 
-ready(client)
+ready(client);
