@@ -1,13 +1,12 @@
-// import  fs, { Dirent } from 'fs';
 import { Client } from 'discord.js';
 
 import listenerTextCommands from './listeners/text-commands';
 import parseDir from './lib/parse-dir'
 
-import text_commands from './types/listeners';
+import text_commands_type from './types/listeners';
 
 export default (client: Client) => {
-  const commands: text_commands = {};
+  const commands: text_commands_type = {};
   const suffix = '.ts';
   const commandFiles = parseDir(__dirname + '/commands', suffix);
 

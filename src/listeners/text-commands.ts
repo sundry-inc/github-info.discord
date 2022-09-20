@@ -1,13 +1,13 @@
 import { Client } from "discord.js";
 
-import text_commands from "src/types/listeners";
+import text_commands_type from "src/types/listeners";
 
-export default (client: Client, commands: text_commands) => {
+export default (client: Client, commands: text_commands_type) => {
   client.on('messageCreate', (message) => {
     if (message.author.bot || !message.content.startsWith('+')) return;
 
-    const args = message.content.slice(1).split(/ +/);
-    const commandName = args.shift()!.toLowerCase();
+    const args: string[] = message.content.slice(1).split(/ +/);
+    const commandName: string = args.shift()!.toLowerCase();
 
     if (!commands[commandName]) {
       return;
