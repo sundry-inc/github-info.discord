@@ -16,7 +16,7 @@ export default (client: Client): void => {
     
     try {
       await mongoose.connect(
-        `mongodb+srv://${CLUSTER_USER}:${CLUSTER_PASS}@cluster0.fki2tsu.mongodb.net/?retryWrites=true&w=majority`,
+        `mongodb+srv://${CLUSTER_USER}:${CLUSTER_PASS}@cluster0.fki2tsu.mongodb.net/github-info-discord`,
         {
           keepAlive: true, 
         }
