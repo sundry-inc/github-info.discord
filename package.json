@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jd-inc/github-info.discord.git"
+    "url": "git+https://github.com/sundry-inc/github-info.discord.git"
   },
   "author": "joyfulpebble",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/jd-inc/github-info.discord/issues"
+    "url": "https://github.com/sundry-inc/github-info.discord/issues"
   },
-  "homepage": "https://github.com/jd-inc/github-info.discord#readme",
+  "homepage": "https://github.com/sundry-inc/github-info.discord#readme",
   "dependencies": {
     "discord.js": "^14.3.0",
     "dotenv": "^16.0.2",
